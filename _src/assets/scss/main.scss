@@ -4,19 +4,47 @@
 @import 'core/mixins';
 
 // Components
+@import 'components/buttons';
 @import 'components/hero';
 @import 'components/header';
 
 body {
-	margin: 0;
-	padding: 0;
-	min-width: 320px;
+	@include zeroMargin-Padding();
 
 }
 
 .main__page {
-	margin: 0;
-	padding: 0;
+	@include zeroMargin-Padding();
 
+}
+
+.wrapper {
+	margin: 0;
+	padding: 0 15px;
+}
+
+.main__blog  {
+	padding-top: 30px 0;
+	height: 376px;
+	width: 100%;
+}
+
+.blog__high--text {
+	@include mainStyles($lightMediumColor, 14px);
+	margin: 0;
+}
+
+.blog__high--title {
+	@include titleStyles($darkColor, 24px);
+	@include zeroMargin-Padding();
+}
+
+.blog__high--paragraph {
+	@include mainStyles($greyColor, 18px);
+	line-height: 1.67;
+}
+
+.blog__high {
+    padding: 30px 0 45px;
 }
 

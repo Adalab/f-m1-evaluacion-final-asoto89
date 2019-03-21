@@ -16,8 +16,7 @@
 	.hero__title {
 		@include titleStyles($lightColor, 42px);
 		text-transform: uppercase;
-		margin: 0;
-		padding: 0;
+		@include zeroMargin-Padding();
 		text-align: center;
 	}
 
@@ -25,8 +24,7 @@
 	.hero__subtitle {
 		@include mainStyles($lightColor, $fontSize-md);
 		text-align: center;
-		margin: 0;
-		padding: 0;
+		@include zeroMargin-Padding();
 	}
 
 	.hero__scroll-down {
