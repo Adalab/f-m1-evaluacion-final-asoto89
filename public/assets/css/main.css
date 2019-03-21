@@ -313,13 +313,14 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
+  height: 100%;
 }
 
-.reasons__text .reasons__items {
+.reasons__items {
   margin-bottom: 45px;
 }
 
-.reasons__text .reasons__title {
+.reasons__title {
   font-family: "Roboto Slab", serif;
   color: #000;
   font-size: 18px;
@@ -329,7 +330,7 @@ body {
   margin: 0;
 }
 
-.reasons__text .reasons__p {
+.reasons__p {
   font-family: "Roboto", sans-serif;
   color: #000;
   font-size: 18px;
@@ -411,6 +412,23 @@ body {
 
   .blog__high--button {
     width: 91px;
+  }
+
+  .reasons__section {
+    height: 397px;
+  }
+
+  .reasons__text {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 112px;
+    grid-gap: 28px;
+    margin-bottom: 60px;
+  }
+
+  .reasons__p {
+    font-size: 20px;
+    margin-top: 14px;
   }
 }
 

@@ -94,6 +94,10 @@ body {
 	background-color: $lighterMediumColor;
 	height: 624px;
 	box-sizing: border-box;
+
+	@media (min-width: 768px) {
+	height: 397px;
+	}
 }
 
 .reasons__section--title {
@@ -105,22 +109,37 @@ body {
 	padding: 30px 0 60px;
 	box-sizing: border-box;
 	text-align: center;
+	height: 100%;
 }
 
 .reasons__text {
-	.reasons__items {
+	@media (min-width: 768px) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 112px;
+		grid-gap: 28px;
+		margin-bottom: 60px;
+	}
+}
+
+.reasons__items {
 	margin-bottom: 45px;
 }
 
-	.reasons__title {
-		@include titleStyles($darkColor, 18px);
-		font-weight: bold;
-		@include zeroMargin-Padding();
-	}	
-	.reasons__p {
-		@include mainStyles ($darkColor, 18px);
-		@include zeroMargin-Padding();
-		line-height: 30px;
+.reasons__title {
+	@include titleStyles($darkColor, 18px);
+	font-weight: bold;
+	@include zeroMargin-Padding();
+}	
+
+.reasons__p {
+	@include mainStyles ($darkColor, 18px);
+	@include zeroMargin-Padding();
+	line-height: 30px;
+
+	@media (min-width: 768px) {
+		font-size: 20px;
+		margin-top: 14px;
 	}
 }
 
@@ -131,6 +150,5 @@ body {
 	color: $lightColor;
 	width: 184px;
 	margin: 0 auto;
-
 }
 
