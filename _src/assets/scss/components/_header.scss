@@ -1,0 +1,16 @@
+.header__menu {
+    width: 44px;
+    height: 44px;
+    background-color: $mediumColor;
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include centerFlex();
+}
+
+.menu__link {
+    flex-grow: 1;
+    height: 100%;
+    box-sizing: border-box;
+    @include centerFlex();
+}

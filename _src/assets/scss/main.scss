@@ -1,6 +1,11 @@
+// Core
 @import 'core/settings';
 @import 'core/functions';
 @import 'core/mixins';
+
+// Components
+@import 'components/hero';
+@import 'components/header';
 
 body {
 	margin: 0;
@@ -13,50 +18,4 @@ body {
 	margin: 0;
 	padding: 0;
 
-}
-
-// .wrapper {
-// 	padding: 15px;
-// }
-
-.hero__image {
-	background-image: url('../images/cover.jpg');
-	background-position: center;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	padding: 0 15px;
-	
-
-	.hero__text {
-		padding-top: 284px;
-	}
-
-	.hero__title {
-		@include titleStyles($lightColor, 42px);
-		text-transform: uppercase;
-		margin: 0;
-		padding: 0;
-		text-align: center;
-	}
-
-
-	.hero__subtitle {
-		@include mainStyles($lightColor, $fontSize-md);
-		text-align: center;
-		margin: 0;
-		padding: 0;
-	}
-
-	.hero__scroll-down {
-		width: 45px;
-		height: 45px;
-		background-color: $lightColor;
-		border-radius: 50%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
 }

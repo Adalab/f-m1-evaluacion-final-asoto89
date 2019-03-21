@@ -1,0 +1,41 @@
+.hero__image {
+	background: url('../images/cover.jpg') center center no-repeat;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 15px;
+	
+
+	.hero__text {
+		padding-top: 284px;
+	}
+
+	.hero__title {
+		@include titleStyles($lightColor, 42px);
+		text-transform: uppercase;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+
+	.hero__subtitle {
+		@include mainStyles($lightColor, $fontSize-md);
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	.hero__scroll-down {
+		width: 45px;
+		height: 45px;
+		background-color: $lightColor;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
