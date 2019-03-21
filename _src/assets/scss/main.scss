@@ -5,6 +5,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	min-width: 320px;
 
 }
 
@@ -24,9 +25,14 @@ body {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
+	padding: 0 15px;
 	
+
+	.hero__text {
+		padding-top: 284px;
+	}
 
 	.hero__title {
 		@include titleStyles($lightColor, 42px);
@@ -34,15 +40,23 @@ body {
 		margin: 0;
 		padding: 0;
 		text-align: center;
-		width: 100%;
 	}
 
 
 	.hero__subtitle {
 		@include mainStyles($lightColor, $fontSize-md);
 		text-align: center;
-		width: 100%;
 		margin: 0;
 		padding: 0;
+	}
+
+	.hero__scroll-down {
+		width: 45px;
+		height: 45px;
+		background-color: $lightColor;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
