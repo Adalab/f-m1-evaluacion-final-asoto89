@@ -11,6 +11,10 @@
 @import 'components/buttons';
 @import 'components/hero';
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	@include zeroMargin-Padding();
 
@@ -92,6 +96,14 @@ body {
     border: solid 2px $colorButton;
     background-color: $lightColor;
 	color: $colorButton;
+	transition: all ease 0.5s;
+	
+	&:hover {
+		transform: scale(1.1);
+		background-color: $colorButton;
+		color: white;
+		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)
+	}
 	
 	@media (min-width: 768px) {
 		width: 91px;
@@ -167,5 +179,13 @@ body {
 	color: $lightColor;
 	width: 184px;
 	margin: 0 auto;
+	transition: all ease 0.5s;
+	
+	&:hover {
+		transform: scale(1.1);
+		background-color: $lightColor;
+		color: $colorButton;
+		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)
+	}
 }
 
