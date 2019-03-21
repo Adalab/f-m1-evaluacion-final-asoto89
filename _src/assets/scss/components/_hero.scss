@@ -24,6 +24,11 @@
 		height: 100%;
 		padding-bottom: 45px; 
 	}
+
+	@media (min-width: 1280px) {
+		height: 100%;
+		padding-bottom: 13px; 
+	}
 }
 
 .hero__title {
@@ -32,9 +37,11 @@
 	@include zeroMargin-Padding();
 	text-align: center;
 	margin-bottom: 10px;
+	max-width: 290px;
 
 	@media (min-width: 768px) {
 		font-size: 80px;
+		max-width: 690px;
 	}
 
 	@media (min-width: 1280px) {
