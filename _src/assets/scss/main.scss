@@ -3,10 +3,14 @@
 @import 'core/functions';
 @import 'core/mixins';
 
+//Layout
+@import 'layout/header';
+@import 'layout/footer';
+
 // Components
 @import 'components/buttons';
 @import 'components/hero';
-@import 'components/header';
+
 
 body {
 	@include zeroMargin-Padding();

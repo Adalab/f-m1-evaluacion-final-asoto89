@@ -1,0 +1,33 @@
+.page__footer {
+    @include mainStyles($lightColor, 16px);
+    line-height: 30px;
+    min-height: 465px;
+    width: 100%;
+    background-color: $mediumDarkColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: content-box;
+    text-align: center;
+}
+
+.footer__menu--container {
+    margin: 60px auto 30px; 
+}
+
+.footer__rrss--container {
+    margin: 0 auto 30px; 
+}
+
+.footer__list {
+    list-style: none;
+    @include zeroMargin-Padding();
+    width: 100%;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
