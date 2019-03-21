@@ -1,22 +1,40 @@
 .page__footer{
     background-color: $mediumDarkColor;
+    box-sizing: border-box;
+    min-height: 465px;
+
+    @media (min-width: 768px) {
+        min-height: 240px;
+    }
 }
 
 .footer__container {
     @include mainStyles($lightColor, 16px);
     @include zeroMargin-Padding();
     line-height: 30px;
-    min-height: 465px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    box-sizing: content-box;
     text-align: center;
+
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        text-align: left;
+        padding-bottom: 45px;
+    }
 }
+
 .footer__rrss--container {
-    margin: 30px auto 30px; 
+    margin: 30px auto 30px;
+    @media (min-width: 768px) {
+        order: 3;
+        margin: 0;
+    }
+}
+
+.footer__menu--container {
+    @media (min-width: 768px) {
+        order: 2;
+    }
 }
 
 .footer__list {
@@ -47,6 +65,9 @@
 .footer__copy {
     @include zeroMargin-Padding();
     font-size: 14px;
+    @media (min-width: 768px) {
+        order: 1;
+    }
 }
 
 .footer__copy-copy {

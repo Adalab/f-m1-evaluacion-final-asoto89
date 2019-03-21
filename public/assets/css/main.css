@@ -37,6 +37,9 @@
 
 .page__footer {
   background-color: #304268;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 465px;
 }
 
 .footer__container {
@@ -46,22 +49,6 @@
   padding: 0;
   margin: 0;
   line-height: 30px;
-  min-height: 465px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
   text-align: center;
 }
 
@@ -367,6 +354,37 @@ body {
 }
 
 @media (min-width: 768px) {
+  .page__footer {
+    min-height: 240px;
+  }
+
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    text-align: left;
+    padding-bottom: 45px;
+  }
+
+  .footer__rrss--container {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    margin: 0;
+  }
+
+  .footer__menu--container {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .footer__copy {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
   .hero__gradient {
     height: 768px;
   }
