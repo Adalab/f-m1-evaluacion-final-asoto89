@@ -60,7 +60,7 @@
     align-items: center;
     transform: translateY(-50%);
     box-shadow: 0 2px 4px rgba(black, .5);
-    transition: all ease 0.5;
+    transition: all ease-in 1;
 
     &:hover {
         transform: scale(1.1);
