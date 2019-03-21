@@ -11,7 +11,6 @@
 @import 'components/buttons';
 @import 'components/hero';
 
-
 body {
 	@include zeroMargin-Padding();
 
@@ -24,33 +23,58 @@ body {
 
 .wrapper {
 	margin: 0 15px;
+	padding: 0 auto;
+
+	@media (min-width: 768px) {
+		margin: 0 39px;
+	}
 }
 
 //Blog section
 
 .main__blog  {
-	padding-top: 30px 0;
-	height: 376px;
+	padding: 0;
+	min-height: 376px;
 	width: 100%;
+	box-sizing: border-box;
+
+	@media (min-width: 768px) {
+		min-height: 330px;
+	}
 }
 
 .blog__high--text {
 	@include mainStyles($lightMediumColor, 14px);
 	margin: 0;
+	font-weight: normal;
+	text-transform: capitalize;
 }
 
 .blog__high--title {
 	@include titleStyles($darkColor, 24px);
 	@include zeroMargin-Padding();
+	text-transform: capitalize;
+	
+	@media (min-width: 768px) {
+		font-size: 26px;
+	}
 }
 
 .blog__high--paragraph {
 	@include mainStyles($greyColor, 18px);
 	line-height: 1.67;
+
+	@media (min-width: 768px) {
+		font-size: 20px;
+		line-height: 1.5;
+		margin: 30px auto 30px; 
+	}
 }
 
 .blog__high {
-    margin: 30px 0 45px;
+	padding: 30px 0 60px;
+	box-sizing: border-box;
+	height: 100%;
 }
 
 .blog__high--button {
@@ -58,7 +82,11 @@ body {
     width: 76px;
     border: solid 2px $colorButton;
     background-color: $lightColor;
-    color: $colorButton;
+	color: $colorButton;
+	
+	@media (min-width: 768px) {
+		width: 91px;
+	}
 }
 
 //Reasons section
