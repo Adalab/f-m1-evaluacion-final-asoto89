@@ -60,6 +60,10 @@
     align-items: center;
     transform: translateY(-50%);
     box-shadow: 0 2px 4px rgba(black, .5);
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .footer__copy {
