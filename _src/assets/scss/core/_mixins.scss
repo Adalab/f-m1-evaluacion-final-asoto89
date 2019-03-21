@@ -1,0 +1,12 @@
+@mixin titleStyles ($textColor, $textSize) {
+    font-family: $fontFamily-titles;
+    color: $textColor;
+    font-size: $textSize;
+    font-weight: bold;
+}
+
+@mixin mainStyles ($textColor, $textSize) {
+    font-family: $fontFamily-main;
+    color: $textColor;
+    font-size: $textSize;
+}
