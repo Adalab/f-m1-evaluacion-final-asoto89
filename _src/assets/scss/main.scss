@@ -23,31 +23,40 @@ body {
 
 .wrapper {
 	margin: 0 15px;
-	padding: 0 auto;
 
 	@media (min-width: 768px) {
 		margin: 0 39px;
+	}
+
+	@media (min-width: 1280px) {
+		margin: 0 275px;
 	}
 }
 
 //Blog section
 
 .main__blog  {
-	padding: 0;
-	min-height: 376px;
+	padding: 30px 0 60px;
+	height: 100%;
 	width: 100%;
 	box-sizing: border-box;
 
 	@media (min-width: 768px) {
 		min-height: 330px;
+		padding: 60px 0 60px;
 	}
 }
 
 .blog__high--text {
 	@include mainStyles($lightMediumColor, 14px);
 	margin: 0;
+	padding: 0;
 	font-weight: normal;
 	text-transform: capitalize;
+
+	@media (min-width: 1280px) {
+		font-size: 16px;
+	}
 }
 
 .blog__high--title {
@@ -57,6 +66,10 @@ body {
 	
 	@media (min-width: 768px) {
 		font-size: 26px;
+	}
+
+	@media (min-width: 1280px) {
+		font-size: 32px;
 	}
 }
 
@@ -71,14 +84,10 @@ body {
 	}
 }
 
-.blog__high {
-	padding: 30px 0 60px;
-	box-sizing: border-box;
-	height: 100%;
-}
 
 .blog__high--button {
-    @include buttonStyle();
+	@include buttonStyle();
+	@include zeroMargin-Padding ();
     width: 76px;
     border: solid 2px $colorButton;
     background-color: $lightColor;
@@ -92,12 +101,7 @@ body {
 //Reasons section
 .reasons__section {
 	background-color: $lighterMediumColor;
-	height: 624px;
 	box-sizing: border-box;
-
-	@media (min-width: 768px) {
-	height: 397px;
-	}
 }
 
 .reasons__section--title {
@@ -106,10 +110,19 @@ body {
 }
 
 .reasons__container {
-	padding: 30px 0 60px;
+	padding: 30px 15px 60px;
 	box-sizing: border-box;
 	text-align: center;
 	height: 100%;
+
+	@media (min-width: 768px) {
+		padding: 30px 40px 60px 
+	}
+
+	@media (min-width: 1280px) {
+		padding: 30px auto 60px 
+	}
+
 }
 
 .reasons__text {
@@ -130,6 +143,10 @@ body {
 	@include titleStyles($darkColor, 18px);
 	font-weight: bold;
 	@include zeroMargin-Padding();
+	
+	@media (min-width: 768px) {
+		font-size: 24px;
+	}
 }	
 
 .reasons__p {
