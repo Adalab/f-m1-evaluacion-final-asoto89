@@ -38,6 +38,8 @@
   font-family: "Roboto", sans-serif;
   color: white;
   font-size: 16px;
+  padding: 0;
+  margin: 0;
   line-height: 30px;
   min-height: 465px;
   width: 100%;
@@ -59,12 +61,8 @@
   text-align: center;
 }
 
-.footer__menu--container {
-  margin: 60px auto 30px;
-}
-
 .footer__rrss--container {
-  margin: 0 auto 30px;
+  margin: 30px auto 30px;
 }
 
 .footer__list {
@@ -78,6 +76,48 @@
   text-decoration: none;
   color: white;
   text-transform: uppercase;
+}
+
+.hero__scroll-up {
+  width: 45px;
+  height: 45px;
+  margin: 0 auto 15px;
+  background-color: white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.footer__copy {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer__copy-copy {
+  padding: 0;
+  margin: 0;
+}
+
+.footer__credits--p {
+  padding: 0 0 45px;
+  margin: 0;
+}
+
+.footer__icon {
+  color: #f26002;
+  font-size: 10px;
 }
 
 .blog__high--button {

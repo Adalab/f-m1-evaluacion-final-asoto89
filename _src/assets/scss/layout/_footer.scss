@@ -1,5 +1,6 @@
 .page__footer {
     @include mainStyles($lightColor, 16px);
+    @include zeroMargin-Padding();
     line-height: 30px;
     min-height: 465px;
     width: 100%;
@@ -11,13 +12,8 @@
     box-sizing: content-box;
     text-align: center;
 }
-
-.footer__menu--container {
-    margin: 60px auto 30px; 
-}
-
 .footer__rrss--container {
-    margin: 0 auto 30px; 
+    margin: 30px auto 30px; 
 }
 
 .footer__list {
@@ -30,4 +26,36 @@
     text-decoration: none;
     color: white;
     text-transform: uppercase;
+}
+
+.hero__scroll-up {
+    width: 45px;
+    height: 45px;
+    margin: 0 auto 15px;
+    background-color: $lightColor;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    box-shadow: 0 2px 4px rgba(black, .5);
+}
+
+.footer__copy {
+    @include zeroMargin-Padding();
+    font-size: 14px;
+}
+
+.footer__copy-copy {
+    @include zeroMargin-Padding();
+}
+
+.footer__credits--p {
+    padding: 0 0 45px;
+    margin: 0;  
+}
+
+.footer__icon {
+    color: $colorButton;
+    font-size: 10px;
 }
