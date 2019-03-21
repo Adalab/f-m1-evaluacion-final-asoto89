@@ -23,9 +23,10 @@ body {
 }
 
 .wrapper {
-	margin: 0;
-	padding: 0 15px;
+	margin: 0 15px;
 }
+
+//Blog section
 
 .main__blog  {
 	padding-top: 30px 0;
@@ -49,6 +50,59 @@ body {
 }
 
 .blog__high {
-    padding: 30px 0 45px;
+    margin: 30px 0 45px;
+}
+
+.blog__high--button {
+    @include buttonStyle();
+    width: 76px;
+    border: solid 2px $colorButton;
+    background-color: $lightColor;
+    color: $colorButton;
+}
+
+//Reasons section
+.reasons__section {
+	background-color: $lighterMediumColor;
+	height: 624px;
+	box-sizing: border-box;
+}
+
+.reasons__section--title {
+	@include titleStyles($darkColor, 24px);
+	margin: 0 auto 45px;
+}
+
+.reasons__container {
+	padding: 30px 0 60px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.reasons__text {
+	.reasons__items {
+	margin-bottom: 45px;
+}
+
+	.reasons__title {
+		@include titleStyles($darkColor, 18px);
+		font-weight: bold;
+		@include zeroMargin-Padding();
+	}	
+	.reasons__p {
+		@include mainStyles ($darkColor, 18px);
+		@include zeroMargin-Padding();
+		line-height: 30px;
+	}
+}
+
+.reasons__button--button {
+	@include buttonStyle();
+	border: solid 2px $colorButton;
+	background-color: $colorButton;
+	color: $lightColor;
+	width: 184px;
+	margin: 0 auto;
+
 }
 

@@ -30,4 +30,8 @@
     font-family: $fontFamily-main;
     font-weight: bold;
     font-size: 20px;
+    text-transform: capitalize;
+    appearance: none;
+    border-radius: 22.5px;
+    cursor: pointer;
 }
