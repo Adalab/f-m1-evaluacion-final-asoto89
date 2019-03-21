@@ -88,6 +88,8 @@
   transform: translateY(-50%);
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all ease 0.5;
+  transition: all ease 0.5;
 }
 
 .hero__scroll-up:hover {
