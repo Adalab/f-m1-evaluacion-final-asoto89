@@ -49,6 +49,11 @@
     text-transform: uppercase;
 }
 
+
+.scroll-down__image {
+    transform: rotate(-45deg);
+}
+
 .hero__scroll-up {
     width: 45px;
     height: 45px;
@@ -58,14 +63,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(-50%);
+    transform: translateY(-50%) rotate(45deg);
     box-shadow: 0 2px 4px rgba(black, .5);
-    transition: all ease-in 1;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    transition: transform ease 0.5s, border-radius ease-out 0.5s;
 
     &:hover {
-        transform: scale(1.1);
+        border-radius: 0 50% 50% 50%;
+        border: solid 2px $colorButton; 
+        box-shadow: 0 0 5px rgba(black, 0.8);
     }
 }
+
+@keyframes scroll {
+   0% {
+        transform: translateY(-50%) rotate(45deg) scale(1);
+   }
+
+   50% {
+        transform: translateY(-50%) rotate(45deg) scale(1.2);
+   }
+
+   100% {
+       transform: translateY(-50%) rotate(45deg) scale(1);
+    }
+}
+
 
 .footer__copy {
     @include zeroMargin-Padding();
