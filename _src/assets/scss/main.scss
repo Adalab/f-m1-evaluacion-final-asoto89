@@ -118,6 +118,7 @@ body {
 
 .reasons__section--title {
 	@include titleStyles($darkColor, 24px);
+	text-transform: capitalize;
 	margin: 0 auto 45px;
 }
 
@@ -155,6 +156,7 @@ body {
 	@include titleStyles($darkColor, 18px);
 	font-weight: bold;
 	@include zeroMargin-Padding();
+	
 	
 	@media (min-width: 768px) {
 		font-size: 24px;
