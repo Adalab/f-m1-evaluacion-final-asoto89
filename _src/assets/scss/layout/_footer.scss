@@ -65,6 +65,7 @@
     align-items: center;
     transform: translateY(-50%) rotate(45deg);
     box-shadow: 0 2px 4px rgba(black, .5);
+    box-sizing: border-box;
     animation-name: scroll;
     animation-duration: 2s;
     animation-iteration-count: infinite;
