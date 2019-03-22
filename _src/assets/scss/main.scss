@@ -120,6 +120,10 @@ body {
 	@include titleStyles($darkColor, 24px);
 	text-transform: capitalize;
 	margin: 0 auto 45px;
+
+	@media (min-width: 1280px) {
+		font-size: 32px;
+	}
 }
 
 .reasons__container {
