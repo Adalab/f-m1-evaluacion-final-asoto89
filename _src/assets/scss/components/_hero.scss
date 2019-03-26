@@ -64,10 +64,14 @@
 }
 
 .hero__scroll-down {
+	display: none;
 	background-color: $lightColor;
 	height: 45px;
 	border-radius: 50%;
 	width: 45px;
+	@media (min-width: 768px) {
+		display: block;
+	}
 }
 
 .hero__scroll-down--link {

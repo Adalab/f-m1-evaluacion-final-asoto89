@@ -51,6 +51,13 @@ body {
 	}
 }
 
+.blog__container {
+	@media (min-width: 768px) {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+
 .blog__high--text {
 	@include mainStyles($lightMediumColor, 14px);
 	margin: 0;
@@ -80,6 +87,7 @@ body {
 .blog__high--paragraph {
 	@include mainStyles($greyColor, 18px);
 	line-height: 1.67;
+	margin-bottom: 20px;
 
 	@media (min-width: 768px) {
 		font-size: 20px;
